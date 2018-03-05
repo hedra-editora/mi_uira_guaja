@@ -1,0 +1,11 @@
+# Fdb version 3
+["xdvipdfmx"] 0 "LIVRO.xdv" "LIVRO.pdf" "LIVRO" 0
+  "LIVRO.xdv" 0 -1 0 "xelatex"
+  (generated)
+  "LIVRO.pdf"
+["xelatex"] 0 "LIVRO.tex" "LIVRO.xdv" "LIVRO" 0
+  "LIVRO.aux" 1520282099 8 a94a2480d3289e625eea47cd1b285758 ""
+  "LIVRO.tex" 0 -1 0 ""
+  (generated)
+  "LIVRO.log"
+  "LIVRO.xdv"
