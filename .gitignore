@@ -1,5 +1,7 @@
 *~
 *.docx
+*.jpg
+*.tiff
 *.swp
 *.log
 *.aux
