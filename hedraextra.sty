@@ -52,10 +52,12 @@
 % "hedratoc" para ser usado com o shorttoc
 \RequirePackage{shorttoc}
 \newcommand{\hedrashorttoc}{
+\setcounter{secnumdepth}{1}
 \ifodd\thepage\clearpage\else\paginabranca\fi
 \def\contentsname{índice}
 \addcontentsline{toc}{chapter}{Índice}
 \tableofcontents}
+
 
 
 
