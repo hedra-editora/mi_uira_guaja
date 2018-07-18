@@ -4,7 +4,11 @@
 %\usepackage{penalidades}
 \usepackage[vieira]{hedra} %% << %%%%%%%%%%%%%%%%
 \usepackage{gitrevisioninfo,url}
+\usepackage{placeins}
 \usepackage{float}
+\usepackage{floatpag}
+\usepackage{caption}
+\usepackage{rotating}
 
 
 \newcommand{\forceindent}{\leavevmode{\parindent=1.5em\indent}}
@@ -33,16 +37,11 @@
 }{\par}
 \makeatother
 
-\makeatletter
-\newcommand{\lrarrow}{\mathrel{\mathpalette\lrarrow@\relax}}
-\newcommand{\lrarrow@}[2]{%
-  \vcenter{\hbox{\ooalign{%
-    $\m@th#1\mkern6mu\rightarrow$\cr
-    \noalign{\vskip1pt}
-    $\m@th#1\leftarrow\mkern6mu$\cr
-  }}}%
-}
-\makeatother
+\newenvironment{absolutelynopagebreak}
+  {\par\nobreak\vfil\penalty0\vfilneg
+   \vtop\bgroup}
+  {\par\xdef\tpd{\the\prevdepth}\egroup
+   \prevdepth=\tpd}
 
 \begin{document}
 
