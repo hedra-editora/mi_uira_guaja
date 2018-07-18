@@ -33,6 +33,17 @@
 }{\par}
 \makeatother
 
+\makeatletter
+\newcommand{\lrarrow}{\mathrel{\mathpalette\lrarrow@\relax}}
+\newcommand{\lrarrow@}[2]{%
+  \vcenter{\hbox{\ooalign{%
+    $\m@th#1\mkern6mu\rightarrow$\cr
+    \noalign{\vskip1pt}
+    $\m@th#1\leftarrow\mkern6mu$\cr
+  }}}%
+}
+\makeatother
+
 \begin{document}
 
 \include{INPUTS}
