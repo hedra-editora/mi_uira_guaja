@@ -60,10 +60,17 @@
 % Fontes
 \newfontfamily\formular{Formular}
 \newfontfamily\formularlight{Formular Light}
+<<<<<<< HEAD
 %\setmainfont[Ligatures=TeX,Numbers=OldStyle]{Linux Libertine O}
 \setmainfont[Numbers={Proportional,OldStyle}]{EBGaramond-Regular}[
 BoldFont = EBGaramond-Bold,
 ItalicFont = EBGaramond-Italic]
+=======
+\setmainfont[Numbers={Proportional,OldStyle}]{EBGaramond-Regular.ttf}[
+BoldFont = EBGaramond-Bold.ttf ,
+ItalicFont = EBGaramond-Italic.ttf ]
+
+>>>>>>> cf7a966a283c59799d0ee812bce56ce9b4abae0b
 
 % Estilos
 \makeoddhead{baruch}{}{\scshape\MakeLowercase{\scshape\MakeTextLowercase{\leftmark}}}{}
@@ -82,6 +89,7 @@ ItalicFont = EBGaramond-Italic]
 %\input{MUSSUMIPSUM}  		% Teste da classe
 \include{INPUTS}
 
+\hedrashorttoc
 
 \checkandfixthelayout
 \end{document}
