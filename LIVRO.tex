@@ -60,8 +60,10 @@
 % Fontes
 \newfontfamily\formular{Formular}
 \newfontfamily\formularlight{Formular Light}
-\setmainfont{Linux Libertine O}
-
+%\setmainfont[Ligatures=TeX,Numbers=OldStyle]{Linux Libertine O}
+\setmainfont[Numbers={Proportional,OldStyle}]{EBGaramond-Regular}[
+BoldFont = EBGaramond-Bold,
+ItalicFont = EBGaramond-Italic]
 
 % Estilos
 \makeoddhead{baruch}{}{\scshape\MakeLowercase{\scshape\MakeTextLowercase{\leftmark}}}{}
@@ -75,7 +77,7 @@
 
 
 \begin{document}
-%\fontsize{9.5pt}{\baselineskip}\selectfont
+\fontsize{9.5pt}{\baselineskip}\selectfont
 
 %\input{MUSSUMIPSUM}  		% Teste da classe
 \include{INPUTS}
